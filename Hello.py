@@ -40,7 +40,7 @@ if prompt:
             #Obtain the response from the agent and append to chat history. Also print it.
             response = planning_agent(api_key = GOOGLE_API_KEY, agent_input= {"input":prompt})
             st.session_state.messages.append({"role":"assistant", "content": response["output"]})
-            st.markdown(response["output"])
+            #st.markdown(response["output"])
 
             for chunk in response["output"]:
                     full_response += chunk
