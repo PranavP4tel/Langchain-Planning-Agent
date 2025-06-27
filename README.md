@@ -10,7 +10,7 @@ This web-app is created to ease the task of planning fun activities with your fr
 1. Interface - A Streamlit based interface that accepts a Gemini API Key to enable the conversation. Saves the chat history in the session and makes function calls to the agent, retrieving and displaying the results.
 
 2. Agent - A Langchain based agent that makes use of:
-* Search tool provide web search functionality to the agent, internally using DuckDuckGo.
+* Search tool providing web search functionality to the agent, internally using DuckDuckGo.
 * Conversation Buffer Memory to save the chat history and provide context of the conversation to the agent.
 * Google's Gemini - The core of the agent, coupled with Langchain's prompt template, tool calling agent, agent executor and some prompt engineering.
 
